@@ -34,4 +34,5 @@ export const plans: Plan[] = [
     tagline: "Estabilidad para ventas y cámaras",
     features: ["Atención preferente", "SLA básico", "Opcional IP pública"],
   },
+  
 ];

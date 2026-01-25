@@ -32,7 +32,7 @@ export default function Hero() {
       <div className="relative z-10 flex h-full items-center justify-center px-6">
         <div className="max-w-2xl text-center text-white">
           <p className="text-xs font-medium tracking-[0.22em] text-white/80">
-            INSTALACIÓN RÁPIDA • SOPORTE WHATSAPP • COBERTURA POR ZONAS
+            INSTALACIÓN RÁPIDA • SOPORTE 24/7 • COBERTURA POR ZONAS
           </p>
 
           <h1 className="mt-4 text-[44px] font-semibold leading-[0.95] tracking-tight md:text-[72px]">

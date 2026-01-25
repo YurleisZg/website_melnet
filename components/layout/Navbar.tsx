@@ -19,8 +19,8 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
         <div className="flex items-center">
           <img src="/logo1.png" alt="Melnet Logo" className="w-16 h-auto object-contain" />
-          <Link href="/" className="font-semibold text-lg text-blue-950">
-            Melnet<span className="text-slate-600"> Internet</span>
+          <Link href="/" className="font-semibold text-lg text-slate-900">
+            Melnet<span className="text-slate-700"> Internet</span>
           </Link>
         </div>
 

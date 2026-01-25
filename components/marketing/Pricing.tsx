@@ -72,17 +72,19 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <Link
-                href={`/contratar?plan=${p.id}`}
+                <a
+                href={`https://wa.me/573001234567?text=Hola,%20me%20interesa%20contratar%20el%20plan%20${encodeURIComponent(p.name)}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={[
                   "relative z-10 mt-8 block rounded-2xl px-5 py-3 text-center text-sm font-semibold transition",
                   p.highlighted
-                    ? "bg-slate-900 text-white hover:opacity-90"
-                    : "border border-slate-200 bg-white text-slate-900 hover:bg-slate-50",
+                  ? "bg-slate-900 text-white hover:opacity-90"
+                  : "border border-slate-200 bg-white text-slate-900 hover:bg-slate-50",
                 ].join(" ")}
-              >
+                >
                 Contratar este plan
-              </Link>
+                </a>
 
               {/* micro-copy opcional (no cambia lógica, solo visual) */}
               <p className="relative z-10 mt-3 text-center text-xs text-slate-500">
