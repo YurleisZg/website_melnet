@@ -58,7 +58,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-6 md:py-20">
+      <section className="py-6 md:py-15">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 md:grid-cols-2 md:items-start">
           
           <div className="rounded-[20px] border border-slate-200 bg-white p-10 shadow-[0_20px_50px_rgba(0,0,0,0.04)] md:sticky md:top-24">
@@ -161,7 +161,6 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              {/* ESTADOS DE ENVÍO */}
               {status === "success" && (
                 <div className="flex items-center gap-3 rounded-2xl bg-slate-900 p- text-white animate-in fade-in zoom-in-95">
                   <CheckCircle2 size={24} />

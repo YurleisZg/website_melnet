@@ -23,7 +23,6 @@ export default function FAQ() {
     <section id="soporte" className="bg-gray-100 py-18 md:py-24">
       <div className="mx-auto max-w-6xl px-4">
         
-        {/* Header Alineado a la Izquierda */}
         <div className="mb-10 pl-6 md:pl-3">
           <p className="text-xs font-bold tracking-[0.25em] text-slate-500 uppercase">
             SOPORTE
@@ -77,10 +76,8 @@ export default function FAQ() {
             </div>
           </div>
 
-          {/* LADO DERECHO: Buscador + Acordeón */}
           <div className="space-y-6">
             
-            {/* Buscador Slate Style */}
             <div className="relative group">
               <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-slate-900 transition-colors" size={18} />
               <input
@@ -99,7 +96,6 @@ export default function FAQ() {
               )}
             </div>
 
-            {/* Lista de Preguntas */}
             <div className="space-y-4">
               {filtered.map((f, idx) => {
                 const isOpen = openIndex === idx;
@@ -139,7 +135,6 @@ export default function FAQ() {
                 );
               })}
 
-              {/* Empty State */}
               {filtered.length === 0 && (
                 <div className="py-20 text-center">
                   <p className="text-lg font-bold text-slate-900">No encontramos resultados</p>

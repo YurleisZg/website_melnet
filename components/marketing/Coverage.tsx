@@ -8,7 +8,6 @@ export default function Coverage() {
     <section id="cobertura" className="bg-white py-24">
       <div className="mx-auto max-w-6xl px-4">
         
-        {/* Encabezado Centrado */}
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-semibold tracking-[0.22em] text-slate-500 uppercase">
             COBERTURA
@@ -21,10 +20,8 @@ export default function Coverage() {
           </p>
         </div>
 
-        {/* Grid Principal */}
         <div className="mt-16 grid gap-8 lg:grid-cols-2 lg:items-center">
           
-          {/* LADO IZQUIERDO: Información y CTA */}
           <div className="space-y-8">
             <div className="grid gap-6">
               <div className="flex items-start gap-4">
@@ -63,10 +60,8 @@ export default function Coverage() {
             </div>
           </div>
 
-          {/* LADO DERECHO: Mapa de Colombia y Zonas */}
           <div className="relative overflow-hidden rounded-[32px] border border-slate-100 bg-slate-50/50 p-8 md:p-12">
 
-            {/* Contenido sobre el mapa */}
             <div className="relative z-10">
               <p className="text-xs font-bold tracking-widest text-slate-600 uppercase">Zonas Activas</p>
               <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">

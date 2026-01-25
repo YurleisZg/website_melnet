@@ -20,12 +20,10 @@ export default function FeatureGrid() {
 
   return (
     <section className="relative overflow-hidden border-y border-white/10 bg-gradient-to-b from-zinc-950 via-zinc-900 to-zinc-950 py-20 md:py-24">
-      {/* Decorative glows */}
       <div className="pointer-events-none absolute -top-40 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-white/10 blur-3xl opacity-40" />
       <div className="pointer-events-none absolute -bottom-48 right-[-120px] h-[520px] w-[520px] rounded-full bg-white/10 blur-3xl opacity-25" />
 
       <div className="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-[0.95fr_1.05fr] md:items-start">
-        {/* LEFT: Text */}
         <div className="md:sticky md:top-24">
           <p className="text-xs font-semibold tracking-[0.22em] text-white/60">
             EXPERIENCIA SIN ESTRÉS
@@ -41,7 +39,6 @@ export default function FeatureGrid() {
             Estabilidad, atención y una experiencia clara de principio a fin.
           </p>
 
-          {/* Mini bullets */}
           <div className="mt-8 space-y-3 rounded-[28px] border border-white/10 bg-white/5 p-6 shadow-[0_18px_70px_rgba(0,0,0,0.35)] backdrop-blur">
             <p className="text-sm font-semibold text-white/90">Lo que más importa:</p>
 
@@ -67,7 +64,6 @@ export default function FeatureGrid() {
           </div>
         </div>
 
-        {/* RIGHT: Cards */}
         <div className="grid gap-6 md:grid-cols-2">
           {items.map((it, idx) => (
             <div
@@ -77,20 +73,16 @@ export default function FeatureGrid() {
                 "shadow-[0_18px_70px_rgba(0,0,0,0.35)] backdrop-blur",
                 "transition will-change-transform",
                 "hover:-translate-y-1 hover:border-white/20 hover:bg-white/7",
-                // “micro animation” on load if you have tailwindcss-animate
                 "animate-in fade-in slide-in-from-bottom-2 duration-500",
               ].join(" ")}
               style={{ animationDelay: `${idx * 80}ms` }}
             >
-              {/* Hover shine */}
               <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100">
                 <div className="absolute -left-1/2 top-0 h-full w-1/2 rotate-12 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
               </div>
 
-              {/* Glow blob */}
               <div className="pointer-events-none absolute -top-24 left-1/2 h-48 w-48 -translate-x-1/2 rounded-full bg-white/10 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
 
-              {/* Index badge */}
               <div className="relative z-10 flex items-center gap-3">
                 <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-black/20 text-sm font-semibold text-white/90 transition group-hover:border-white/20">
                   {String(idx + 1).padStart(2, "0")}
@@ -111,7 +103,6 @@ export default function FeatureGrid() {
                 Ver detalle →
               </p>
 
-              {/* Subtle corner */}
               <div className="pointer-events-none absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-white/5 blur-2xl" />
             </div>
           ))}

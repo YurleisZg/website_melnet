@@ -11,12 +11,10 @@ export default function AboutPage() {
 
   return (
     <main className="bg-white">
-      {/* HERO SECTION CON IMAGEN */}
       <section className="relative overflow-hidden py-24 md:py-22">
         <div className="mx-auto max-w-6xl px-4">
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
             
-            {/* Texto alineado a la izquierda */}
             <div className="border-l-4 border-slate-900 pl-6 md:pl-8">
               <p className="text-xs font-bold tracking-[0.25em] text-slate-500 uppercase">
                 QUIÉNES SOMOS
@@ -35,7 +33,6 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Imagen con estilo premium */}
             <div className="relative">
               <div className="aspect-[4/5] overflow-hidden rounded-[3rem] border-8 border-slate-50 shadow-2xl">
                 <img 
@@ -44,7 +41,6 @@ export default function AboutPage() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              {/* Badge flotante */}
               <div className="absolute -bottom-6 -left-6 rounded-3xl bg-white p-6 shadow-xl border border-slate-100">
                 <p className="text-3xl font-bold text-slate-900">100%</p>
                 <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Compromiso Local</p>
@@ -54,11 +50,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-{/* MISION Y VALORES - CENTRADO */}
       <section className="bg-slate-50/50 py-24">
         <div className="mx-auto max-w-6xl px-4">
           
-          {/* Encabezado de Misión Centrado */}
           <div className="mx-auto max-w-3xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
               Nuestra visión del servicio
@@ -74,7 +68,6 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Grid de Valores Centrados */}
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((v) => (
               <div
