@@ -42,7 +42,7 @@ export default function ContactPage() {
   return (
     <main className="bg-white">
       {/* HEADER CENTRADO */}
-      <section className="border-b border-slate-200 py-20 md:py-28">
+      <section className="border-b border-slate-200 py-12 md:py-20">
         <div className="mx-auto max-w-6xl px-4">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-bold tracking-[0.22em] text-slate-500 uppercase">
@@ -51,20 +51,18 @@ export default function ContactPage() {
             <h1 className="mt-4 text-5xl font-bold tracking-tight text-slate-900 md:text-7xl">
               Hablemos
             </h1>
-            <p className="mt-6 text-xl text-slate-600 md:text-2xl leading-relaxed">
+            <p className="mt-4 text-l text-slate-600 md:text-xl leading-relaxed">
               Cuéntanos tu zona y lo que necesitas. Te respondemos lo más rápido posible.
             </p>
           </div>
         </div>
       </section>
 
-      {/* CONTENIDO DE CARDS GRANDES */}
-      <section className="py-20 md:py-32">
+      <section className="py-6 md:py-20">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 md:grid-cols-2 md:items-start">
           
-          {/* LADO IZQUIERDO: INFO DE CONTACTO */}
-          <div className="rounded-[40px] border border-slate-200 bg-white p-10 shadow-[0_20px_50px_rgba(0,0,0,0.04)] md:sticky md:top-24">
-            <h2 className="text-2xl font-bold text-slate-900">Canales directos</h2>
+          <div className="rounded-[20px] border border-slate-200 bg-white p-10 shadow-[0_20px_50px_rgba(0,0,0,0.04)] md:sticky md:top-24">
+            <h2 className="text-xl font-bold text-slate-900">Canales directos</h2>
             <p className="mt-3 text-lg text-slate-600">
               Si prefieres, escríbenos por WhatsApp o correo directamente.
             </p>
@@ -103,7 +101,7 @@ export default function ContactPage() {
               </a>
             </div>
 
-            <div className="mt-10 rounded-[32px] border border-slate-100 bg-slate-50/50 p-8">
+            <div className="mt-10 rounded-[10px] border border-slate-100 bg-slate-50/50 p-8">
               <p className="text-lg font-bold text-slate-900 italic underline decoration-slate-200 underline-offset-4">Horario de atención</p>
               <p className="mt-4 text-base text-slate-600 leading-relaxed">
                 Lunes a Sábado: 8:00 a.m. – 6:00 p.m. <br />
@@ -112,24 +110,23 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* LADO DERECHO: FORMULARIO FUNCIONAL */}
-          <div className="rounded-[40px] border border-slate-200 bg-white p-10 md:p-14 shadow-[0_20px_50px_rgba(0,0,0,0.04)]">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900">
+          <div className="rounded-[20px] border border-slate-200 bg-white p-10 md:p-14 shadow-[0_20px_50px_rgba(0,0,0,0.04)]">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900">
               Envíanos tus datos
             </h2>
             <p className="mt-4 text-lg text-slate-600">
-              Te contactamos con disponibilidad real por zona.
+              Te contactamos lo antes posible para ofrecerte la mejor solución.
             </p>
 
-            <form onSubmit={handleSubmit} className="mt-10 space-y-6">
-              <div className="grid gap-6 md:grid-cols-2">
-                <div className="space-y-2">
+            <form onSubmit={handleSubmit} className="mt-4 space-y-2">
+              <div className="grid gap-3 md:grid-cols-1">
+                <div className="space-y-1">
                   <label className="text-sm font-bold text-slate-700 ml-1 uppercase tracking-wide">Nombre</label>
                   <input
                     required
                     name="name"
                     placeholder="Tu nombre completo"
-                    className="w-full rounded-2xl border border-slate-200 bg-white px-5 py-4 text-base text-slate-900 outline-none focus:border-slate-900 transition-all shadow-sm"
+                    className="w-full rounded-2xl border border-slate-200 bg-white px-5 py-3 text-base text-slate-900 outline-none focus:border-slate-900 transition-all shadow-sm"
                   />
                 </div>
                 <div className="space-y-2">
@@ -138,20 +135,9 @@ export default function ContactPage() {
                     required
                     name="phone"
                     placeholder="+57 3xx xxx xxxx"
-                    className="w-full rounded-2xl border border-slate-200 bg-white px-5 py-4 text-base text-slate-900 outline-none focus:border-slate-900 transition-all shadow-sm"
+                    className="w-full rounded-2xl border border-slate-200 bg-white px-5 py-3 mb-2 text-base text-slate-900 outline-none focus:border-slate-900 transition-all shadow-sm"
                   />
                 </div>
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-slate-700 ml-1 uppercase tracking-wide">Correo</label>
-                <input
-                  required
-                  name="email"
-                  type="email"
-                  placeholder="tu@correo.com"
-                  className="w-full rounded-2xl border border-slate-200 bg-white px-5 py-4 text-base text-slate-900 outline-none focus:border-slate-900 transition-all shadow-sm"
-                />
               </div>
 
               <div className="space-y-2">
@@ -177,7 +163,7 @@ export default function ContactPage() {
 
               {/* ESTADOS DE ENVÍO */}
               {status === "success" && (
-                <div className="flex items-center gap-3 rounded-2xl bg-slate-900 p-5 text-white animate-in fade-in zoom-in-95">
+                <div className="flex items-center gap-3 rounded-2xl bg-slate-900 p- text-white animate-in fade-in zoom-in-95">
                   <CheckCircle2 size={24} />
                   <p className="text-base font-bold text-center">¡Mensaje enviado con éxito!</p>
                 </div>
@@ -192,7 +178,7 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full rounded-2xl bg-slate-900 px-8 py-5 text-lg font-bold text-white transition hover:bg-slate-800 disabled:opacity-50 shadow-xl shadow-slate-100 active:scale-95 transition-all"
+                className="w-full rounded-2xl bg-slate-900 px-8 py-3 text-lg font-bold text-white transition hover:bg-slate-800 disabled:opacity-50 shadow-xl shadow-slate-100 active:scale-95 transition-all"
               >
                 {loading ? "Enviando solicitud..." : "Enviar solicitud ahora"}
               </button>
