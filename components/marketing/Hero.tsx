@@ -49,7 +49,7 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
-              href="/contratar"
+              href="/contact"
               className="w-full rounded-2xl bg-white px-6 py-3 text-center text-sm font-semibold text-black hover:opacity-90 sm:w-auto"
             >
               Quiero que me contacten

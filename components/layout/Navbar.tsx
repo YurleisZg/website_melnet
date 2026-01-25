@@ -4,19 +4,19 @@ import Link from "next/link";
 import { useState } from 'react'
 
 const nav = [
-  { href: "#planes", label: "Planes" },
-  { href: "#cobertura", label: "Cobertura" },
-  { href: "#soporte", label: "Soporte" },
-  { href: "#nosotros", label: "Nosotros" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/#planes", label: "Planes" },
+  { href: "/#cobertura", label: "Cobertura" },
+  { href: "/#soporte", label: "Soporte" },
+  { href: "/about-us", label: "Nosotros" },
+  { href: "/contact", label: "Contacto" },
 ];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-gray-100 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+    <header className="sticky top-0 z-50 border-b bg-white backdrop-blur ">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
         <div className="flex items-center">
           <img src="/logo1.png" alt="Melnet Logo" className="w-16 h-auto object-contain" />
           <Link href="/" className="font-semibold text-lg text-blue-950">
