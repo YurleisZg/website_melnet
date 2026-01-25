@@ -11,10 +11,10 @@ export default function CTA() {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3 justify-center">
-            <Link href="/contratar" className="rounded-xl bg-black px-5 py-3 text-sm font-medium text-white">
+            <Link href="/contacto" className="rounded-xl bg-black px-5 py-3 text-sm font-medium text-white">
               Contratar
             </Link>
-            <Link href="#planes" className="rounded-xl border border-black/25 px-5 py-3 text-sm font-medium text-black">
+            <Link href="/#planes" className="rounded-xl border border-black/25 px-5 py-3 text-sm font-medium text-black">
               Ver planes
             </Link>
           </div>
