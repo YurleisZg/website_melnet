@@ -86,7 +86,6 @@ export default function Pricing() {
                 Contratar este plan
                 </a>
 
-              {/* micro-copy opcional (no cambia lógica, solo visual) */}
               <p className="relative z-10 mt-3 text-center text-xs text-slate-500">
                 Confirmamos cobertura antes de instalar.
               </p>

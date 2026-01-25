@@ -33,17 +33,14 @@ export default function Problems() {
           </p>
         </div>
 
-        {/* Grid */}
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {problems.map((p, idx) => (
             <div
               key={p.title}
               className="group relative overflow-hidden rounded-[28px] border border-slate-200/80 bg-white p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]"
             >
-              {/* Top subtle glow */}
               <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-slate-50 to-transparent" />
 
-              {/* Badge */}
               <div className="relative z-10 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-600">
                 Problema {String(idx + 1).padStart(2, "0")}
               </div>
@@ -64,7 +61,6 @@ export default function Problems() {
           ))}
         </div>
 
-        {/* Simple bridge to Steps */}
         <div className="mx-auto mt-10 max-w-3xl text-center">
           <p className="text-sm text-slate-600">
             Ahora sí: mira cómo lo resolvemos de forma simple.
