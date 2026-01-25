@@ -4,30 +4,30 @@ import Link from "next/link";
 import { useState } from 'react'
 
 const nav = [
-  { href: "/planes", label: "Planes" },
-  { href: "/cobertura", label: "Cobertura" },
-  { href: "/soporte", label: "Soporte" },
-  { href: "/nosotros", label: "Nosotros" },
-  { href: "/contacto", label: "Contacto" },
+  { href: "#planes", label: "Planes" },
+  { href: "#cobertura", label: "Cobertura" },
+  { href: "#soporte", label: "Soporte" },
+  { href: "#nosotros", label: "Nosotros" },
+  { href: "#contacto", label: "Contacto" },
 ];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+    <header className="sticky top-0 z-50 border-b bg-gray-100 backdrop-blur">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <div className="flex items-center">
-          <img src="/logo1.png" alt="Melnet Logo" className=" w-16 h-auto object-contain" />
-          <Link href="/" className="font-semibold text-m text-blue-950">
+          <img src="/logo1.png" alt="Melnet Logo" className="w-16 h-auto object-contain" />
+          <Link href="/" className="font-semibold text-lg text-blue-950">
             Melnet<span className="text-slate-600"> Internet</span>
           </Link>
         </div>
 
-        <div className="flex items-center gap-8 ml-auto">
+        <div className="flex items-center gap-8 ml-auto ">
           <nav className="hidden items-center gap-6 md:flex">
             {nav.map((i) => (
-              <Link key={i.href} href={i.href} className="text-sm text-slate-700 hover:text-black">
+              <Link key={i.href} href={i.href} className="text-m text-slate-900 hover:text-blue-950">
                 {i.label}
               </Link>
             ))}
