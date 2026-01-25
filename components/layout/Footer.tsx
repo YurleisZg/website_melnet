@@ -26,7 +26,7 @@ export default function Footer() {
         <div>
           <p className="font-semibold text-white">Contacto</p>
           <div className="mt-2 space-y-2 text-sm text-white/80">
-            <Link className="block hover:text-white" href="/contact">Agenda aquí</Link>
+            <Link className="block hover:text-white" href="/contacto">Agenda aquí</Link>
             <Link className="block hover:text-white" target="_blank" href="https://wa.me/573005409089">WhatsApp: +57 300 5409089</Link>
             <Link className="block hover:text-white" href="mailto:melnetinternet@gmail.com">Correo: melnetinternet@gmail.com</Link>
             <p>Horario: Lun–Sáb</p>
@@ -38,7 +38,7 @@ export default function Footer() {
           <div className="mt-2 space-y-2 text-sm text-white/80">
             <Link className="block hover:text-white" href="/terminos-y-condiciones">Términos</Link>
             <Link className="block hover:text-white" href="/privacidad">Privacidad</Link>
-            <Link className="block hover:text-white" href="/about-us">Quienes somos</Link>
+            <Link className="block hover:text-white" href="/quienes-somos">Quienes somos</Link>
           </div>
         </div>
       </div>

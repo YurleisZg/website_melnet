@@ -7,8 +7,8 @@ const nav = [
   { href: "/#planes", label: "Planes" },
   { href: "/#cobertura", label: "Cobertura" },
   { href: "/#soporte", label: "Soporte" },
-  { href: "/about-us", label: "Nosotros" },
-  { href: "/contact", label: "Contacto" },
+  { href: "/quienes-somos", label: "Nosotros" },
+  { href: "/contacto", label: "Contacto" },
 ];
 
 export default function Navbar() {
