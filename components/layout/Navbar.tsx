@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState } from 'react'
+import ThemeToggle from "@/components/ui/ThemeToggle";
+
 
 const nav = [
   { href: "/#planes", label: "Planes" },
@@ -15,7 +17,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-white backdrop-blur ">
+    <header className="sticky top-0 z-50 border-b bg-white ">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
         <div className="flex items-center">
           <img src="/logo1.png" alt="Melnet Logo" className="w-16 h-auto object-contain" />
@@ -34,21 +36,18 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center -mr-9">
-            <button className="p-2 text-slate-700 hover:text-black">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" fill="currentColor"/>
-              </svg>
-            </button>
-            <button className="flex items-center gap-1 p-2 text-slate-700 hover:text-black">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="4" width="20" height="16" rx="2" fill="#c41e3a"/>
-                <rect x="2" y="4" width="20" height="2.67" fill="#c41e3a"/>
-                <rect x="2" y="9.33" width="20" height="2.67" fill="#ffc400"/>
-                <rect x="2" y="14.67" width="20" height="2.67" fill="#c41e3a"/>
-              </svg>
-              <span className="text-xs font-medium">ES</span>
-            </button>
-          </div>
+           <ThemeToggle/>
+          <select 
+            className="ml-2 px-2 py-1 text-sm border border-slate-300 rounded-md bg-white text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            onChange={(e) => {
+              console.log('Language changed to:', e.target.value);
+            }}
+            defaultValue="es"
+          >
+            <option value="es">🇪🇸 ES</option>
+            <option value="en">🇺🇸 EN</option>
+          </select>
+        </div>
 
           <button 
             className="md:hidden p-2 text-slate-700 hover:text-black"
