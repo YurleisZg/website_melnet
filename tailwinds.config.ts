@@ -10,7 +10,7 @@ const config: Config = {
       colors: {
         melnet: {
           blue: "#096173ff",    
-          dark: "#003366",   
+          dark: "#01101fff",   
           orange: "#ff6600", 
           light: "#f0f7ff",  
         },

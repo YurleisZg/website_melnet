@@ -45,19 +45,21 @@ export default function Coverage() {
 
             <div className="flex flex-col gap-4 pt-4 sm:flex-row">
               <Link
-                href="/cobertura"
-                className="flex items-center justify-center gap-2 rounded-2xl bg-slate-900 px-8 py-4 text-sm font-bold text-white transition-all hover:bg-blue-600"
+                href="/#cobertura"
+                className="flex items-center justify-center gap-2 rounded-2xl bg-slate-900 px-8 py-4 text-sm font-bold text-white transition-all "
               >
                 Consultar Disponibilidad
                 <MapPin size={18} />
               </Link>
-              <Link
-                href="/whatsapp"
+                <a
+                href="https://wa.me/1234567890"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-8 py-4 text-sm font-bold text-slate-900 transition-all hover:bg-slate-50"
-              >
+                >
                 Hablar con un asesor
                 <ChevronRight size={18} />
-              </Link>
+                </a>
             </div>
           </div>
 
@@ -79,10 +81,10 @@ export default function Coverage() {
                 ))}
               </div>
               
-              <div className="mt-8 rounded-2xl bg-slate-600 p-4 text-center">
-                <p className="text-sm font-medium text-white">
+              <div className="mt-8 rounded-xl bg-slate-700 p-4 text-center">
+                <Link href="/contacto" className="text-sm font-medium text-white">
                   ¿No ves tu dirección? <span className="underline cursor-pointer">Avísanos aquí</span>
-                </p>
+                </Link>
               </div>
             </div>
           </div>
