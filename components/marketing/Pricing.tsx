@@ -19,12 +19,11 @@ export default function Pricing() {
             </p>
           </div>
 
-          <Link
-            href="/planes"
+          <p
             className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 transition hover:decoration-slate-900"
           >
-            Ver comparación completa <span className="translate-y-[1px]">→</span>
-          </Link>
+            Nuestros mejores Planes <span className="translate-y-[1px]">→</span>
+          </p>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">

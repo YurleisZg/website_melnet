@@ -1,3 +1,4 @@
+import { locale } from "dayjs";
 import Link from "next/link";
 
 export default function Footer() {
@@ -35,7 +36,7 @@ export default function Footer() {
         <div>
           <p className="font-semibold text-white">Legal</p>
           <div className="mt-2 space-y-2 text-sm text-white/80">
-            <Link className="block hover:text-white" href="/terminos">Términos</Link>
+            <Link className="block hover:text-white" href="/terminos-y-condiciones">Términos</Link>
             <p>Privacidad</p>
             <p>Quienes somos</p>
           </div>
