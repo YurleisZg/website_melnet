@@ -1,20 +1,20 @@
 export default function FeatureGrid() {
   const items = [
     {
-      title: "Cortes y reconexión más controlados",
-      desc: "Procesos claros para pagos y reconexión, con comunicación transparente.",
+      title: "Gestión Inteligente",
+      desc: "Control total de tu cuenta con procesos de pago claros y reconexión automática inmediata.",
     },
     {
-      title: "Soporte por WhatsApp",
-      desc: "Canal directo con historial del caso y seguimiento en tiempo real.",
+      title: "Soporte Directo",
+      desc: "Atención humana vía WhatsApp con seguimiento en tiempo real. Sin bots, sin esperas largas.",
     },
     {
-      title: "Hogar y negocios",
-      desc: "Escala según tu necesidad: streaming, trabajo remoto o operación comercial.",
+      title: "Máximo Rendimiento",
+      desc: "Internet de alta capacidad diseñado para streaming 4K, gaming de baja latencia y home office.",
     },
     {
-      title: "Monitoreo y estabilidad",
-      desc: "Priorizamos continuidad del servicio y respuesta rápida ante incidentes.",
+      title: "Estabilidad Garantizada",
+      desc: "Monitoreo proactivo 24/7. Detectamos y resolvemos cualquier incidencia antes de que lo notes.",
     },
   ];
 
@@ -30,36 +30,36 @@ export default function FeatureGrid() {
           </p>
 
           <h2 className="mt-3 text-4xl font-semibold tracking-tight text-white md:text-5xl">
-            Hecho para conectarte
+            Internet diseñado para
             <br />
-            <span className="text-white/70">sin estrés</span>
+            <span className="text-white/70">fluir sin límites</span>
           </h2>
 
           <p className="mt-4 max-w-md text-lg text-white/70 md:text-xl">
-            Estabilidad, atención y una experiencia clara de principio a fin.
+            Tecnología híbrida de Fibra y Cable para garantizar estabilidad absoluta en cada rincón.
           </p>
 
           <div className="mt-8 space-y-3 rounded-[28px] border border-white/10 bg-white/5 p-6 shadow-[0_18px_70px_rgba(0,0,0,0.35)] backdrop-blur">
-            <p className="text-sm font-semibold text-white/90">Lo que más importa:</p>
+            <p className="text-sm font-semibold text-white/90">Soluciones integrales de infraestructura:</p>
 
             <ul className="mt-3 space-y-2 text-sm text-white/75">
               <li className="flex gap-3">
                 <span className="mt-2 h-2 w-2 rounded-full bg-white/90" />
-                <span>Menos caídas y mejor continuidad</span>
+                <span>Seguridad avanzada: Instalación de Cámaras de seguridad y Alarmas.</span>
               </li>
               <li className="flex gap-3">
                 <span className="mt-2 h-2 w-2 rounded-full bg-white/90" />
-                <span>Soporte directo sin vueltas</span>
+                <span>Cableado Estructurado y Certificación de puntos de red.</span>
               </li>
               <li className="flex gap-3">
                 <span className="mt-2 h-2 w-2 rounded-full bg-white/90" />
-                <span>Planes que se ajustan a tu uso</span>
+                <span>Consultoría experta en optimización de redes.</span>
               </li>
             </ul>
 
             <div className="mt-6 h-px w-full bg-gradient-to-r from-white/0 via-white/15 to-white/0" />
-            <p className="mt-4 text-sm font-medium text-white/85">
-              Más claridad, menos fricción →
+            <p className="mt-4 text-sm font-medium text-white/85 cursor-pointer hover:text-white transition-colors">
+              Conoce nuestras soluciones Corporativas
             </p>
           </div>
         </div>
@@ -98,10 +98,6 @@ export default function FeatureGrid() {
               </p>
 
               <div className="relative z-10 mt-8 h-px w-full bg-gradient-to-r from-white/0 via-white/15 to-white/0" />
-
-              <p className="relative z-10 mt-4 text-sm font-medium text-white/85">
-                Ver detalle →
-              </p>
 
               <div className="pointer-events-none absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-white/5 blur-2xl" />
             </div>
