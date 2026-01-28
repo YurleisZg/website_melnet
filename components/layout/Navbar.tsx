@@ -26,13 +26,17 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-8 ml-auto">
-          <nav className="hidden items-center gap-6 md:flex">
+            <nav className="hidden items-center gap-6 md:flex">
             {nav.map((i) => (
-              <Link key={i.href} href={i.href} className="text-sm font-medium text-slate-700 hover:text-blue-600 dark:text-slate-300 dark:hover:text-white transition-colors">
-                {i.label}
+              <Link 
+              key={i.href} 
+              href={i.href} 
+              className="text-sm font-medium text-slate-700 hover:text-blue-600 dark:text-slate-300 dark:hover:text-white transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              >
+              {i.label}
               </Link>
             ))}
-          </nav>
+            </nav>
 
           <div className="flex items-center gap-3">
             <ThemeToggle />
