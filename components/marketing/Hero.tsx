@@ -13,7 +13,7 @@ export default function Hero() {
     return HERO_IMAGES[i];
   }, []);
 
-  const wa = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573225051941";
+  const wa = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573043408837";
   const waText = encodeURIComponent("Hola, quiero internet. Mi zona es:");
 
   return (

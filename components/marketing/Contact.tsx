@@ -7,9 +7,9 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573000000000";
-  const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hola@tuempresa.com";
-  const contactPhone = process.env.NEXT_PUBLIC_CONTACT_PHONE || "+57 300 000 0000";
+  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573043408837";
+  const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "melnetinternet@gmail.com";
+  const contactPhone = process.env.NEXT_PUBLIC_CONTACT_PHONE || "+57 3043408837";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -104,8 +104,9 @@ export default function ContactPage() {
             <div className="mt-10 rounded-[10px] border border-slate-100 bg-slate-50/50 p-8">
               <p className="text-lg font-bold text-slate-900 italic underline decoration-slate-200 underline-offset-4">Horario de atención</p>
               <p className="mt-4 text-base text-slate-600 leading-relaxed">
-                Lunes a Sábado: 8:00 a.m. – 6:00 p.m. <br />
-                Domingos: Soporte técnico prioritario.
+               Lunes a viernes: 8:00 a.m – 5:00 p.m.<br />
+                Sábados: 8:00 a.m. – 3:00 p.m.<br />
+                Domingos y festivos: cerrado.
               </p>
             </div>
           </div>

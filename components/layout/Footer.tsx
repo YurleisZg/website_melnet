@@ -29,7 +29,7 @@ export default function Footer() {
           <p className="font-semibold text-white">Contacto</p>
           <div className="mt-2 space-y-2 text-sm text-white/80">
             <Link className="block hover:text-white" href="/contacto">Agenda aquí</Link>
-            <Link className="block hover:text-white" target="_blank" href="https://wa.me/573225051941">WhatsApp: +57 322 5051941</Link>
+            <Link className="block hover:text-white" target="_blank" href="https://wa.me/573043408837">WhatsApp: +57 304 3408837</Link>
             <Link className="block hover:text-white" href="mailto:melnetinternet@gmail.com">Correo: melnetinternet@gmail.com</Link>
             <p>Horario de atención </p>
             <p>Lunes a viernes 8:00 a.m – 5:00 p.m.</p>

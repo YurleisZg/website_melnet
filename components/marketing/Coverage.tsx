@@ -49,7 +49,7 @@ export default function Coverage() {
                 <MapPin size={18} />
               </Link>
                 <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/573043408837?text=Hola,%20quiero%20hablar%20con%20un%20asesor%20sobre%20la%20cobertura%20de%20internet."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-8 py-4 text-sm font-bold text-slate-900 transition-all hover:bg-slate-50"

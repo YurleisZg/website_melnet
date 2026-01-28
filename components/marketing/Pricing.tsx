@@ -73,7 +73,7 @@ export default function Pricing() {
               </ul>
 
                 <a
-                href={`https://wa.me/573001234567?text=Hola,%20me%20interesa%20contratar%20el%20plan%20${encodeURIComponent(p.name)}`}
+                href={`https://wa.me/573043408837?text=Hola,%20me%20interesa%20contratar%20el%20plan%20${encodeURIComponent(p.name)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={[

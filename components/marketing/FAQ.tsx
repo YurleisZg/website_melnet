@@ -16,7 +16,7 @@ export default function FAQ() {
     );
   }, [query]);
 
-  const wa = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573000000000";
+  const wa = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573043408837";
   const waText = encodeURIComponent("Hola, tengo una duda sobre el servicio de internet:");
 
   return (
