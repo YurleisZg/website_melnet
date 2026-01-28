@@ -64,8 +64,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Valores y Visión */}
       <section className="bg-gray-100 py-24">
         <div className="mx-auto max-w-6xl px-4">
           
@@ -99,8 +97,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Footer de sección sutil */}
 
     </main>
   );
