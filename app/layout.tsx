@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ThemeProvider from "@/components/providers/ThemeProvider";
+import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={inter.className}>
         <ThemeProvider>
           <Navbar />
-          <main className="min-h-dvh">{children}</main>
+          <main className="min-h-dvh">{children}<WhatsAppButton /></main>
           <Footer />
         </ThemeProvider>
       </body>
