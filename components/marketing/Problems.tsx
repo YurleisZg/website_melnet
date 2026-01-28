@@ -1,3 +1,5 @@
+"use client";
+
 export default function Problems() {
   const problems = [
     {
@@ -19,16 +21,17 @@ export default function Problems() {
   ];
 
   return (
-    <section className="bg-white py-20 md:py-24">
+    // bg-white (normal) -> dark:bg-black (modo oscuro)
+    <section className="bg-white py-20 md:py-24 dark:bg-black transition-colors duration-300">
       <div className="mx-auto max-w-6xl px-4">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs font-semibold tracking-[0.22em] text-slate-500">
+          <p className="text-xs font-semibold tracking-[0.22em] text-slate-500 dark:text-slate-400">
             ¿TE SUENA?
           </p>
-          <h2 className="mt-3 text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl">
+          <h2 className="mt-3 text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl dark:text-white">
             Problemas típicos con el internet
           </h2>
-          <p className="mt-4 text-lg text-slate-600 md:text-xl">
+          <p className="mt-4 text-lg text-slate-600 md:text-xl dark:text-slate-300">
             Si te pasa alguno, te mostramos un camino claro para solucionarlo.
           </p>
         </div>
@@ -37,24 +40,27 @@ export default function Problems() {
           {problems.map((p, idx) => (
             <div
               key={p.title}
-              className="group relative overflow-hidden rounded-[28px] border border-slate-200/80 bg-white p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]"
+              // Tarjetas: bg-white -> dark:bg-neutral-900 | dark:border-white/10
+              className="group relative overflow-hidden rounded-[28px] border border-slate-200/80 bg-white p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)] 
+                         dark:border-white/10 dark:bg-neutral-900 dark:shadow-none"
             >
-              <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-slate-50 to-transparent" />
+              {/* Gradiente sutil para dar profundidad en ambos modos */}
+              <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-slate-50 to-transparent dark:from-white/5" />
 
-              <div className="relative z-10 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-600">
+              <div className="relative z-10 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-600 dark:border-white/20 dark:bg-black dark:text-slate-300">
                 Problema {String(idx + 1).padStart(2, "0")}
               </div>
 
-              <h3 className="relative z-10 mt-5 text-xl font-semibold tracking-tight text-slate-900">
+              <h3 className="relative z-10 mt-5 text-xl font-semibold tracking-tight text-slate-900 dark:text-white">
                 {p.title}
               </h3>
 
-              <p className="relative z-10 mt-3 text-base leading-relaxed text-slate-600">
+              <p className="relative z-10 mt-3 text-base leading-relaxed text-slate-600 dark:text-slate-400">
                 {p.desc}
               </p>
 
-              <div className="relative z-10 mt-8 h-px w-full bg-slate-200/70" />
-              <p className="relative z-10 mt-4 text-sm font-medium text-slate-900">
+              <div className="relative z-10 mt-8 h-px w-full bg-slate-200/70 dark:bg-white/10" />
+              <p className="relative z-10 mt-4 text-sm font-medium text-slate-900 dark:text-white">
                 Solución clara en 4 pasos →
               </p>
             </div>
@@ -62,7 +68,7 @@ export default function Problems() {
         </div>
 
         <div className="mx-auto mt-10 max-w-3xl text-center">
-          <p className="text-sm text-slate-600">
+          <p className="text-sm text-slate-600 dark:text-slate-400">
             Ahora sí: mira cómo lo resolvemos de forma simple.
           </p>
         </div>

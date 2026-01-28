@@ -41,7 +41,6 @@ export default function ContactPage() {
 
   return (
     <main className="bg-white">
-      {/* HEADER CENTRADO */}
       <section className="border-b border-slate-200 py-12 md:py-20">
         <div className="mx-auto max-w-6xl px-4">
           <div className="mx-auto max-w-3xl text-center">

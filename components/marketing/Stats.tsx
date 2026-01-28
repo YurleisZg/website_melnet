@@ -7,18 +7,24 @@ export default function Stats() {
   ];
 
   return (
-    <section className="bg-black">
-      <div className="mx-auto max-w-7xl px-4 py-2 md:py-4">
-        <div className="grid gap-3 rounded-3xl bg-black p-4 shadow-sm md:grid-cols-4 md:p-4">
+    <section className="bg-black dark:bg-black transition-colors duration-300">
+      <div className="mx-auto max-w-7xl px-0 md:px-4 py-0 md:py-4">
+        <div 
+          className="grid gap-3 p-4 md:grid-cols-4 transition-all
+                     bg-black w-full
+                     dark:rounded-3xl dark:bg-zinc-900/40 dark:border dark:border-white/10 dark:backdrop-blur-sm"
+        >
           {stats.map((s) => (
             <div
               key={s.v}
-              className="rounded-2xl px-5 py-4 text-center md:text-left"
+              className="px-5 py-4 text-center md:text-left"
             >
               <p className="text-4xl font-semibold tracking-tight text-white">
                 {s.k}
               </p>
-              <p className="mt-1 text-sm text-white/70">{s.v}</p>
+              <p className="mt-1 text-sm text-white/70">
+                {s.v}
+              </p>
             </div>
           ))}
         </div>

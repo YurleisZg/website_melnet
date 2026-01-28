@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={inter.className}>
         <ThemeProvider>
           <Navbar />
-          <main className="min-h-dvh">{children}<WhatsAppButton /></main>
+          <main>{children}<WhatsAppButton /></main>
           <Footer />
         </ThemeProvider>
       </body>

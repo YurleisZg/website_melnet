@@ -7,16 +7,16 @@ export default function Steps() {
   ];
 
   return (
-    <section className="bg-white py-20 md:py-24">
+    <section className="bg-white py-20 md:py-24 dark:bg-black transition-colors duration-300">
       <div className="mx-auto max-w-6xl px-4">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs font-semibold tracking-[0.22em] text-slate-500">
+          <p className="text-xs font-semibold tracking-[0.22em] text-slate-500 dark:text-slate-400">
             PROCESO SIMPLE
           </p>
-          <h2 className="mt-3 text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl">
+          <h2 className="mt-3 text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl dark:text-white">
             Contrata en 4 pasos
           </h2>
-          <p className="mt-4 text-lg text-slate-600 md:text-xl">
+          <p className="mt-4 text-lg text-slate-600 md:text-xl dark:text-slate-300">
             Un flujo claro y rápido. Sin vueltas, sin complicarte.
           </p>
         </div>
@@ -25,27 +25,29 @@ export default function Steps() {
           {items.map((it, idx) => (
             <div
               key={it.title}
-              className="group relative overflow-hidden rounded-[28px] border border-slate-200/80 bg-white p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]"
+              className="group relative overflow-hidden rounded-[28px] border border-slate-200/80 bg-white p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,0.10)]
+                         dark:bg-white/5 dark:border-white/10 dark:shadow-none dark:hover:bg-white/10"
             >
-              <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-slate-50 to-transparent" />
+              <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-slate-50 to-transparent dark:from-white/5" />
 
               <div className="relative z-10 flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-white text-lg font-semibold text-slate-900">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-white text-lg font-semibold text-slate-900 
+                                dark:bg-zinc-800 dark:border-white/20 dark:text-white">
                   {idx + 1}
                 </div>
               </div>
 
-              <h3 className="relative z-10 mt-6 text-xl font-semibold tracking-tight text-slate-900">
+              <h3 className="relative z-10 mt-6 text-xl font-semibold tracking-tight text-slate-900 dark:text-white">
                 {it.title}
               </h3>
 
-              <p className="relative z-10 mt-3 text-base leading-relaxed text-slate-600">
+              <p className="relative z-10 mt-3 text-base leading-relaxed text-slate-600 dark:text-slate-400">
                 {it.desc}
               </p>
 
-              <div className="relative z-10 mt-8 h-px w-full bg-slate-200/70" />
+              <div className="relative z-10 mt-8 h-px w-full bg-slate-200/70 dark:bg-white/10" />
 
-              <p className="relative z-10 mt-4 text-sm font-medium text-slate-900">
+              <p className="relative z-10 mt-4 text-sm font-medium text-slate-900 dark:text-white">
                 Listo en minutos →
               </p>
             </div>
