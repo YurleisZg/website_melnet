@@ -38,7 +38,7 @@ export const plans: Plan[] = [
     id: "sierra-100",
     name: "Ultra Sierra Nevada",
     speed: "20 Mbps",
-    priceCop: 100000,
+    priceCop: 120000,
     tagline: "Máxima potencia para Sierra Nevada",
     features: [
       "Dispositivos ilimitados", // 
