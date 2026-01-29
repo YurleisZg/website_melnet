@@ -11,9 +11,9 @@ export type Plan = {
 export const plans: Plan[] = [
   {
     id: "sierra-30",
-    name: "Inicial",
-    speed: "30 Mbps",
-    priceCop: 70000,
+    name: "Inicial Sierra Nevada",
+    speed: "10 Mbps",
+    priceCop: 85000,
     tagline: "Esencial para el hogar en la montaña",
     features: [
       "Fibra Óptica Sierra Nevada", 
@@ -23,21 +23,21 @@ export const plans: Plan[] = [
   },
   {
     id: "sierra-60",
-    name: "Pro",
-    speed: "60 Mbps",
-    priceCop: 85000,
+    name: "Pro Sierra Nevada",
+    speed: "15 Mbps",
+    priceCop: 100000,
     tagline: "Navegación fluida y estable",
     features: [
       "Dispositivos ilimitados", // 
       "Ideal para video y redes sociales", 
-      "Soporte técnico local"
+      "Cobertura del 80% en la zona" 
     ],
     highlighted: true,
   },
   {
     id: "sierra-100",
-    name: "Ultra",
-    speed: "100 Mbps",
+    name: "Ultra Sierra Nevada",
+    speed: "20 Mbps",
     priceCop: 100000,
     tagline: "Máxima potencia para Sierra Nevada",
     features: [
@@ -49,21 +49,21 @@ export const plans: Plan[] = [
 
   {
     id: "antioquia-150",
-    name: "Barbosa Plus",
-    speed: "150 Mbps",
-    priceCop: 120000,
+    name: "Antioquia Plus",
+    speed: "10 Mbps",
+    priceCop: 60000,
     tagline: "Velocidad del futuro en el campo",
     features: [
-      "Cobertura Rural Barbosa (80%)", // 
+      "Cobertura (75%)", // 
       "Dispositivos ilimitados", // 
       "Perfecto para teletrabajo"
     ],
   },
   {
     id: "antioquia-250",
-    name: "Barbosa Élite",
-    speed: "250 Mbps",
-    priceCop: 150000,
+    name: "Antioquia Élite",
+    speed: "15 Mbps",
+    priceCop: 80000,
     tagline: "El plan más robusto de Antioquia",
     features: [
       "Máximo ancho de banda", 
@@ -74,9 +74,9 @@ export const plans: Plan[] = [
   },
   {
     id: "antioquia-empresarial",
-    name: "Barbosa Negocios",
-    speed: "300 Mbps",
-    priceCop: 180000,
+    name: "Antioquia Empresarial",
+    speed: "25 Mbps",
+    priceCop: 100000,
     tagline: "Conectividad total para empresas",
     features: [
       "Prioridad de red", 
