@@ -32,7 +32,7 @@ export default function Footer() {
             <p>Lun a Vie: 8:00 AM – 5:00 PM</p>
             <p>Sábados: 8:00 AM – 3:00 PM</p>
             <p>Dom y Festivos: Cerrado</p>
-            <p className="pt-2">Carrera 44 # 74-72 Barrio Manrique Central, Medellín, Colombia</p>
+            <p className="pt-2">Carrera 44 # 74-72 INT 103, Medellín, Colombia</p>
           </div>
         </div>
 
